@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2dcfb4bee00682b9492f11b00086b3bf",
+    "revision": "33de53ec02afdf0726f3622724c635dd",
     "url": "/ito-noen-react-practice/index.html"
   },
   {
-    "revision": "0d524dc036a53437a5fe",
+    "revision": "56d11fe28707594db9c7",
     "url": "/ito-noen-react-practice/static/css/main.6f6d689d.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ito-noen-react-practice/static/js/2.bc1b818f.chunk.js"
   },
   {
-    "revision": "0d524dc036a53437a5fe",
-    "url": "/ito-noen-react-practice/static/js/main.45764a90.chunk.js"
+    "revision": "56d11fe28707594db9c7",
+    "url": "/ito-noen-react-practice/static/js/main.a70ab2e6.chunk.js"
   },
   {
     "revision": "d3e76ae8073b0267bd75",
