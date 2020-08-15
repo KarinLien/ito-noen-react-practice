@@ -1,0 +1,92 @@
+.AboutPhilosophy {
+  padding: 55px 15px 60px;
+  background: url(../../assets/philosophy/bg_philosophy.jpg) no-repeat left top;
+  background-size: cover;
+}
+
+.AboutPhilosophy .inner {
+  margin: 0 auto;
+  padding: 87px 60px 52px;
+  width: 1000px;
+}
+
+.AboutPhilosophy .subHeading {
+  display: block;
+  width: 90px;
+  margin: 5px auto 0;
+}
+
+.inner .philosophy-heading {
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.24em;
+}
+.ourPhilosophy {
+  margin: 45px;
+  font-size: 26px;
+  line-height: 2.1;
+  letter-spacing: 0.5em;
+}
+.AboutPhilosophy .ourPhilosophy {
+  text-align: center;
+  display: block;
+}
+
+.AboutPhilosophy .philosophy-orange {
+  display: block;
+  margin: 5px auto 0;
+  width: 42px;
+}
+/*------------------------------------------------*/
+
+.philosophyList {
+  margin: 45px;
+}
+
+.philosophyList .philosophy-heading {
+  position: relative;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.philosophyList > .philosophy-heading span {
+  padding: 0 15px;
+  background-color: #fff;
+  position: relative;
+}
+.philosophyList .philosophy-heading::before {
+  content: "";
+  margin: auto;
+  height: 1px;
+  width: 100%;
+  background: url(../../assets/common/bg_border01.png) repeat-x left top;
+  background-size: auto 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.philosophyList ul {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 46px;
+}
+
+.philosophyList figure {
+  display: block;
+  margin: 0 auto;
+  width: 266px;
+}
+.philosophyList p {
+  margin-top: 30px;
+  font-size: 15px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  text-align: center;
+}

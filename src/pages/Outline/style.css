@@ -1,0 +1,46 @@
+.jumbotronAboutOverview {
+  background-image: url(../../assets/outline/mainimg_overview_pc.jpg);
+}
+.jumbotron .inner img {
+  display: block;
+  width: 70px;
+  margin: 36px auto 0;
+}
+.jumbotron .title {
+  display: inline-block;
+  font-size: 21px;
+  letter-spacing: 0.24em;
+  text-align: center;
+}
+.aboutOverviewHeading01:before,
+.aboutOverviewHeading01:after {
+  content: "";
+  position: absolute;
+}
+.aboutOverviewHeading01 {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .aboutOverviewHeading01 {
+    margin: 167px auto 0;
+    padding: 0;
+    width: 328px;
+    font-size: 22px;
+    text-align: center;
+  }
+  .aboutOverviewHeading01:before {
+    height: 30px;
+    width: 33px;
+    background-image: url(../../assets/outline/img_heading-orange_pc.png);
+    top: 7px;
+    left: 9px;
+  }
+  .aboutOverviewHeading01:after {
+    height: 20px;
+    width: 100%;
+    background: url(../../assets/common/bg_border03.png) repeat-x left top;
+    background-size: 100% auto;
+    bottom: -28px;
+    left: 0;
+  }
+}

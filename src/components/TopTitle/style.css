@@ -1,0 +1,489 @@
+.topVideoWrapper {
+  z-index: -1;
+  position: fixed;
+  top: 10px;
+  left: 260px;
+  bottom: 10px;
+  right: 10px;
+  overflow: hidden;
+}
+.forVideo {
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: gainsboro;
+}
+@keyframes scroll02 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 45px;
+  }
+}
+
+.topVideoWrapper .scroll::before {
+  content: "";
+  height: 45px;
+  width: 1px;
+  margin: auto;
+  background-color: #000;
+  -webkit-animation: scroll02 1.5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+  animation: scroll02 1.5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+  position: absolute;
+  top: -65px;
+  left: 0;
+  right: 0;
+}
+
+.scroll {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.scroll img {
+  width: 49px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: -80px;
+  right: 0;
+}
+.widthshow {
+  width: 600px !important;
+}
+.marginRight {
+  margin-right: 22%;
+}
+@media screen and (min-width: 768px) {
+  .topContentsWrap {
+    width: 250px;
+    background-color: #fff;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    position: relative;
+  }
+  .topTitle {
+    min-height: 970px;
+  }
+  .inner {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.topTitle .isVisited {
+  transition: none;
+}
+
+.phase2 {
+  width: calc(100% - 20px);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.topTitle::before,
+.topTitle::after {
+  content: "";
+  height: 10px;
+  width: 100%;
+  background: #fff;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+}
+
+.topTitle .inner {
+  padding-top: 218px;
+  height: 100%;
+  width: 100%;
+  z-index: 15;
+}
+.text {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 2.27;
+  letter-spacing: 0.24em;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  text-align: left;
+  position: relative;
+}
+.text::before {
+  content: "";
+  margin: auto;
+  height: 42px;
+  width: 45px;
+  background: url(../../assets/common/img_splash-orange.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -92px;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 140px;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  right: 0;
+}
+/* ---------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .topContents {
+    margin-top: 150px;
+    padding-left: 95px;
+    width: 600px;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.topContentsWrap .inner {
+  width: 100%;
+  overflow: hidden;
+}
+/*-----------------------------------------------*/
+
+.topIntroSection {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    -webkit-transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media screen and (min-width: 768px) {
+  .topIntroSection .heading {
+    /* margin-top: 120px; */
+    display: inline-block;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+  .topIntroSection .inner {
+    margin: 0;
+  }
+
+  .topIntroSection:before {
+    content: "";
+    height: 522px;
+    width: 600px;
+    background: url(../../assets/common/bg_intro_pc.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: -15%;
+    left: -95px;
+  }
+  .topIntroSection {
+    padding: 0 25% 0 0;
+    position: relative;
+  }
+  .topIntroSection .heading {
+    font-size: 24px;
+    letter-spacing: 0.24em;
+    text-align: center;
+  }
+  .topIntroSection .headingWrap {
+    text-align: center;
+  }
+  .topLinksList li:nth-of-type(1) {
+    margin-right: 51px;
+    text-align: right;
+  }
+  .topLinksList li:nth-of-type(1) .link {
+    top: -50px;
+    right: 20px;
+  }
+  .topLinksList li:hover .picture {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  .topLinksList li:nth-of-type(2) {
+    margin-left: 42px;
+    text-align: left;
+  }
+  .topLinksList li:nth-of-type(2) .link:before {
+    left: -30px;
+  }
+  .topLinksList li + li {
+    margin-top: 10px;
+  }
+  .topLinksList li:nth-of-type(2) .link {
+    padding-left: 89px;
+    top: -55px;
+    left: 20px;
+  }
+  .topLinksList li:nth-of-type(3) {
+    margin-top: 23px;
+    margin-right: 39px;
+    text-align: right;
+  }
+  .topLinksList li:nth-of-type(3) .link {
+    top: -55px;
+    right: 20px;
+  }
+}
+
+.topIntroSection {
+  padding-top: 108px;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  margin: 32px 7px 0 0;
+  display: inline-block;
+  padding: 0 22px 0 119px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  position: relative;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.link:hover {
+  transform: translateX(15px);
+}
+
+.link:before {
+  content: "";
+  margin: auto;
+  height: 1px;
+  width: 100px;
+  background: url(../../assets/common/bg_border01.png) no-repeat center;
+  background-size: auto 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.link:after {
+  content: "";
+  margin: auto;
+  height: 17px;
+  width: 7px;
+  background: url(../../assets/common/ico_arrow.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.topIntroSection .subHeading {
+  margin-top: 72px;
+  display: inline-block;
+  font-size: 19px;
+  line-height: 2.11;
+  letter-spacing: 0.05em;
+}
+
+.topLinksList .link {
+  margin: 0;
+  padding-left: 120px;
+  height: 82px;
+  width: 150px;
+  font-size: 16px;
+  line-height: 82px;
+  background: url(../../assets/common/bg_link.png) no-repeat center;
+  background-size: contain;
+  text-align: left;
+}
+
+.text-in-subHeading {
+  margin-top: 22px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  font-size: 13px;
+  line-height: 2.15;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+.text-in-subHeading:before {
+  content: "";
+  height: 71px;
+  width: 77px;
+  background: url(../../assets/common/img_deco01.png) no-repeat center;
+  background-size: contain;
+  z-index: -1;
+  position: absolute;
+  bottom: -50px;
+}
+
+.topLinksSection {
+  max-width: 445px;
+  margin: 63px 0 0;
+  padding: 0 60px 0 0;
+}
+.picture {
+  margin: 0;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+    -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+img {
+  max-width: 100%;
+  border: none;
+  vertical-align: top;
+}
+/*-------------------------------------------*/
+
+.topNewsSection .heading {
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.topNewsSection .heading small {
+  margin-left: 17px;
+  font-family: "Vollkorn", serif;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  vertical-align: middle;
+}
+@media screen and (min-width: 768px) {
+  .topNewsSection .heading:after {
+    height: 84px;
+    width: 86px;
+    z-index: -1;
+    top: -49px;
+    left: -69px;
+  }
+  .topNewsList li:hover {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+
+.topNewsList li {
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.topNewsSection .heading:after {
+  content: "";
+  height: 82px;
+  width: 64px;
+  background: url(../../assets/common/img_deco02.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: -31px;
+  left: 0;
+}
+.topNewsList {
+  list-style: none;
+}
+.topNewsList time {
+  font-family: "Vollkorn", serif;
+  margin-right: 38px;
+}
+
+.topNewsList a {
+  color: black;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+/* ---------------------------------------- */
+
+.topInstagramSection .heading:after {
+  content: "";
+  height: 88px;
+  width: 65px;
+  background: url(../../assets/common/img_instagram-girl.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+}
+.topInstagramList {
+  color: black;
+  list-style: none;
+  margin-top: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.topInstagramList div {
+  height: 180px;
+  width: 180px;
+  background: no-repeat center;
+  background-size: cover;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+    -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.topInstagramSection .instagramLink {
+  color: #000;
+  height: 78px;
+  width: 133px;
+  background: url(../../assets/common/btn_instagram-link.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: -52px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.topInstagramSection .instagramLink span {
+  font-family: "Vollkorn", serif;
+  font-size: 16px;
+  letter-spacing: 0.24em;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 38px;
+  left: 9px;
+}
+.topInstagramList div:hover {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+@media screen and (min-width: 768px) {
+  .topInstagramSection .heading:after {
+    top: -10px;
+    left: 250px;
+  }
+  .topInstagramList {
+    margin-top: 46px;
+    max-width: 455px;
+  }
+  .topInstagramList li:nth-of-type(2n) {
+    margin-left: 20px;
+  }
+  .topInstagramList li:nth-of-type(n + 3) {
+    margin-top: 20px;
+  }
+  .topInstagramSection .instagramLink {
+    top: 78%;
+    left: 60%;
+  }
+}

@@ -1,0 +1,22 @@
+.jumbotronProduct {
+  background: url(../../assets/product/mainimg_product_pc.jpg);
+}
+.productIndexIntro .productIndexIntroText {
+  text-align: center;
+  line-height: 2.46;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.productIndexIntro .btnStyle02 {
+  margin: 34px auto 0;
+  max-width: 340px;
+}
+.productIndexIntro .btn {
+  height: 58px;
+  width: 100%;
+}
+.productIndexIntro .btn span {
+  background: transparent;
+}

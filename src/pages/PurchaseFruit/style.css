@@ -1,0 +1,435 @@
+.purchaseJumbotron {
+  height: 200px;
+  background: no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.purchaseJumbotron::before {
+  content: "";
+  margin: auto;
+  height: 95px;
+  width: 330px;
+  background: url(../../assets/purchase/fruit/tit_jumbotron.png) no-repeat
+    center bottom -1px;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.purchaseJumbotron .title {
+  margin: auto;
+  width: 289px;
+  text-align: center;
+  position: absolute;
+  top: 162px;
+  left: 0;
+  right: 0;
+}
+.purchaseJumbotron .title h1 {
+  font-size: 21px;
+  letter-spacing: 0.24em;
+  line-height: 1;
+}
+.purchaseJumbotron img {
+  width: 130px;
+}
+.purchaseJumbotron .title img {
+  display: block;
+  margin: 16px auto 0;
+}
+@media screen and (min-width: 768px) {
+  .purchaseJumbotron.pageSeika.PurchaseFruit {
+    background-image: url(../../assets/purchase/fruit/mainimg_seika_pc.jpg);
+  }
+  .purchaseJumbotron {
+    height: 400px;
+  }
+  .purchaseJumbotron::before {
+    height: 182px;
+    width: 625px;
+    background-image: url(../../assets/purchase/fruit/tit_jumbotron_pc.png);
+  }
+  .purchaseJumbotron .title {
+    top: 339px;
+  }
+  .purchaseJumbotron .title h1 {
+    font-size: 22px;
+  }
+  .purchaseJumbotron .title img {
+    margin-top: 20px;
+  }
+}
+
+/*-------------------------------------*/
+.purchaseIntro {
+  margin: 130px 15px 0;
+}
+.purchaseIntro.pageSeika {
+  position: relative;
+}
+.purchaseIntro.pageSeika::before {
+  content: "";
+  margin: auto;
+  height: 46px;
+  width: 50px;
+  background: url(../../assets/purchase/fruit/img_intro-orange.png) no-repeat
+    center;
+  background-size: contain;
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .purchaseIntro {
+    margin: 130px auto 0;
+    width: 1100px;
+  }
+
+  .purchaseIntro.pageSeika:before {
+    top: -88px;
+  }
+}
+/*---------------------------------------------------*/
+.purchaseIntro .text02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 345px;
+  height: 97px;
+  margin: 25px auto 0;
+  background: url(../../assets/purchase/fruit/tit_left-top.png) no-repeat left
+      top,
+    url(../../assets/purchase/fruit/tit_right-bottom.png) no-repeat right bottom;
+  background-size: 71px 72px, 71px 72px;
+  line-height: 1.74;
+  text-align: center;
+}
+.purchaseIntro .text03 {
+  margin-top: 22px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+.purchaseIntro .picture {
+  margin-top: 31px;
+}
+picture {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .purchaseIntro .text02 {
+    height: 104px;
+    width: 553px;
+    max-width: none;
+    font-size: 24px;
+    letter-spacing: 0.24em;
+  }
+  .purchaseIntro .text03 {
+    margin-top: 42px;
+    text-align: center;
+  }
+}
+/*---------------------------------------------------*/
+.purchaseSeikaHeading {
+  margin: 25px 0;
+  text-align: center;
+}
+.purchaseSeikaHeading.orange01 span::before {
+  background-image: url(../../assets/purchase/fruit/img_heading-orange01.png);
+}
+.purchaseSeikaHeading span::before {
+  margin: auto;
+  height: 28px;
+  width: 29px;
+  background: no-repeat center;
+  background-size: contain;
+  left: 15px;
+  bottom: 25px;
+}
+.purchaseSeikaHeading span::before,
+.purchaseSeikaHeading span::after {
+  content: "";
+  position: absolute;
+}
+.purchaseSeikaHeading span {
+  display: inline-block;
+  padding: 0 0 21px 53px;
+  font-family: "A-OTF 見出ゴMB1 Std DeBold", "MiGoMB1Std-DeBold", "見出ゴMB1",
+    "Midashi Go MB1", sans-serif;
+  font-size: 19px;
+  line-height: 1.63;
+  letter-spacing: 0.24em;
+  text-align: left;
+  position: relative;
+}
+.purchaseSeikaHeading span:after {
+  content: "";
+  height: 10px;
+  width: 100%;
+  background: url(../../assets/common/img_dots02.png) repeat-x left top;
+  background-size: auto 100%;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .purchaseSeika01 {
+    margin-top: 67px;
+  }
+
+  .purchaseSeika01,
+  .purchaseSeika03,
+  .purchaseSeika04 {
+    margin: 0 auto;
+    width: 1100px;
+  }
+  .purchaseSeikaHeading span {
+    padding-left: 60px;
+    font-size: 22px;
+  }
+  .purchaseSeikaHeading span::before {
+    height: 36px;
+    width: 36px;
+    top: 0;
+    left: 8px;
+    bottom: auto;
+  }
+}
+/*--------------------------------------------------*/
+.blockModule01 {
+  padding: 10px;
+}
+.blockModule01,
+.blockModule02 {
+  background: url(../../assets/common/bg.jpg) repeat center;
+}
+.blockModule01 > .inner {
+  padding: 15px;
+  background-color: #fff;
+  width: auto;
+}
+.purchaseSeika01 .heading {
+  font-family: "A-OTF 見出ゴMB1 Std DeBold", "MiGoMB1Std-DeBold", "見出ゴMB1",
+    "Midashi Go MB1", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .purchaseSeika01 .blockModule01 > .inner {
+    padding: 72px 40px 40px;
+  }
+  .purchaseSeika01 .heading span {
+    margin-left: 23px;
+    font-size: 22px;
+    letter-spacing: 0.24em;
+  }
+}
+
+/*-------------------------------------------*/
+.purchaseSeika02 {
+  margin-top: 30px;
+}
+.purchaseSeika02 figcaption {
+  margin-top: 16px;
+  font-family: "A-OTF 見出ゴMB1 Std DeBold", "MiGoMB1Std-DeBold", "見出ゴMB1",
+    "Midashi Go MB1", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+}
+
+@media screen and (min-width: 768px) {
+  .purchaseSeika02 {
+    display: flex;
+    margin: 58px auto 0;
+    width: 980px;
+  }
+  .purchaseSeika02 li {
+    width: 300px;
+  }
+  .purchaseSeika02 li + li {
+    margin-left: 40px;
+  }
+}
+
+/*-------------------------------------*/
+.citrusCalendarHeading h2 {
+  font-family: "A-OTF 見出ゴMB1 Std DeBold", "MiGoMB1Std-DeBold", "見出ゴMB1",
+    "Midashi Go MB1", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.24em;
+}
+.citrusCalendar {
+  padding-top: 20px;
+  margin: 20px 15px 0;
+}
+.citrusCalendarHeading {
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+}
+.citrusCalendarHeading img {
+  margin-top: 16px;
+  width: 99px;
+}
+.citrusCalendarHeading:after {
+  content: "";
+  height: 76px;
+  width: 57px;
+  background: url(../../assets../../assets/plantation/img_calendar-girl.png)
+    no-repeat center;
+  background-size: contain;
+  z-index: 1;
+  position: absolute;
+  bottom: -50px;
+  left: 1px;
+}
+@media screen and (min-width: 768px) {
+  .citrusCalendar {
+    padding-top: 50px;
+    margin: 50px auto 0;
+    width: 1100px;
+  }
+  .citrusCalendarHeading h2 {
+    font-size: 28px;
+  }
+  .citrusCalendarHeading {
+    margin: 0;
+  }
+  .citrusCalendarHeading img {
+    margin-top: 16px;
+  }
+  .citrusCalendarHeading:after {
+    height: 89px;
+    width: 66px;
+    bottom: -88px;
+    left: 285px;
+  }
+}
+/*---------------------------------*/
+.citrusCalendar .inner {
+  background: url(../../assets/common/bg.jpg) repeat left top;
+  background-size: auto;
+  position: relative;
+}
+.citrusCalendar .inner::before {
+  content: "";
+  height: 50px;
+  width: 405px;
+  background: url(../../assets/purchase/fruit/txt_calendar-months.png) no-repeat
+    center;
+  background-size: 405px 50px;
+  position: absolute;
+  right: 64px;
+  top: 43px;
+}
+.citrusCalendarList {
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .citrusCalendar .inner {
+    background: none;
+  }
+  .citrusCalendarList {
+    height: auto !important;
+    transition: none;
+    margin-top: 84px;
+    padding: 32px 50px 60px;
+    background-image: url(../../assets/purchase/fruit/bg_calendar_pc.jpg);
+  }
+}
+/*-------------------------------------*/
+.citrusCalendarList li {
+  position: relative;
+}
+.citrusCalendar dt img {
+  margin-right: 18px;
+  width: auto;
+  vertical-align: middle;
+}
+.citrusCalendar dt {
+  font-family: "A-OTF 見出ゴMB1 Std DeBold", "MiGoMB1Std-DeBold", "見出ゴMB1",
+    "Midashi Go MB1", sans-serif;
+  font-size: 18px;
+}
+.citrusCalendarList li::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: url(../../assets/purchase/fruit/img_calendar-border.png) repeat-x
+    left top;
+  background-size: auto 100%;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+.citrusSeason .citrusSeason-text {
+  width: 86px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.citrusSeason .label {
+  display: inline-block;
+  font-size: 13px;
+  height: 40px;
+  width: 135px;
+  letter-spacing: 0.05em;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fdb100;
+  color: #fff;
+  border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .citrusCalendarList li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 82px;
+  }
+  .citrusCalendar dl {
+    display: flex;
+    width: 600px;
+  }
+  .citrusCalendar dt {
+    width: 197px;
+  }
+  .citrusCalendarList li::after {
+    bottom: 0;
+  }
+  .citrusSeason {
+    width: 400px;
+  }
+  .citrusSeason .citrusSeason-text {
+    display: none;
+  }
+  .citrusCalendarList .citrus01 .citrusSeason .label {
+    width: 120px;
+  }
+  .citrusCalendarList .citrus02 .citrusSeason .label {
+    width: 60px;
+  }
+  .citrusCalendarList .citrus03 .citrusSeason .label {
+    width: 200px;
+  }
+  .citrusSeason .label {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+  }
+}

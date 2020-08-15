@@ -1,0 +1,75 @@
+.jumbotron {
+  height: 200px;
+  padding-top: 120px;
+  background: no-repeat center;
+  background-size: cover;
+}
+.jumbotron > .inner {
+  margin: 0 auto;
+  padding-top: 100px;
+  /* height: 80px; */
+  width: 289px;
+  text-align: center;
+  /* background: url(../../assets/business/bg_jumbotron.png) no-repeat center; */
+  background-size: cover;
+}
+.jumbotron .title {
+  display: inline-block;
+  font-size: 21px;
+  letter-spacing: 0.24em;
+  text-align: center;
+}
+
+.jumbotronAboutWorkContents img {
+  width: 90px;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    /* padding-top: 244px;
+    height: 400px; */
+    margin-top: 10px;
+  }
+  .jumbotronAboutWorkContents {
+    background-image: url(../../assets/business/mainimg_work-contents_pc.jpg);
+  }
+  .jumbotron > .inner {
+    /* height: 200px; */
+    width: 700px;
+    background: url(../../assets/business/bg_jumbotron_pc.png) no-repeat center;
+  }
+  .jumbotron > .inner .title {
+    margin-top: 34px;
+    font-size: 24px;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+  }
+  .jumbotron > .inner img {
+    display: block;
+    margin: 30px auto 0;
+  }
+}
+/*---------------------------------*/
+.workContents {
+  margin-top: 15%;
+}
+.workContentsIntro .industriesImg {
+    margin: 44px auto 0;
+    max-width: 319px;
+}
+.workContentsIntro p {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 768px) {
+  .workContentsIntro p {
+    text-align: center;
+    line-height: 2.5;
+  }
+  .workContentsIntro .industriesImg {
+    max-width: none;
+    width: 745px;
+  }
+}

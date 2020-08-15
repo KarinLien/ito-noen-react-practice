@@ -1,0 +1,378 @@
+.industryIntro {
+  position: relative;
+}
+.industryJumbotron {
+  height: 200px;
+  background: no-repeat center;
+  background-size: cover;
+}
+.industryBoard {
+  margin: 0 auto;
+  padding-top: 30px;
+  height: 179px;
+  width: 290px;
+  background: url(../../assets/plantation/img_board_pc.png) no-repeat left top;
+  background-size: contain;
+  position: relative;
+}
+
+.industryBoard > .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 129px;
+  width: 268px;
+}
+.productionDept .industryBoard .subtitle {
+  margin-top: 12px;
+  height: 6px;
+  width: 145px;
+}
+.productionDeptBlock01,
+.productionDeptBlock02 {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+.productionDeptBlock02 dl {
+  margin-top: 22px;
+  padding: 20px 0;
+  position: relative;
+}
+.productionDeptBlock02 dl:before,
+.productionDeptBlock02 dl:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: url(../../assets/common/bg_border01.png) repeat-x left top;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+}
+.productionDeptBlock02 dl:before {
+  top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .productionDept .industryJumbotron {
+    background-image: url(../../assets/plantation/pic_jumbotron_pc.jpg);
+  }
+  .industryJumbotron {
+    margin: 0;
+    height: 1120px;
+  }
+  .industryBoard {
+    padding-top: 99px;
+    height: 264px;
+    width: 322px;
+    background-image: url(../../assets/plantation/img_board_pc.png);
+    position: absolute;
+    top: 0;
+    left: 200px;
+  }
+  .industryBoard > .inner {
+    height: 144px;
+    width: 298px;
+  }
+  .productionDeptBlock01 {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 418px;
+    width: 369px;
+    background: url(../../assets/plantation/bg_production-block01.png) no-repeat
+      center;
+    background-size: contain;
+    position: absolute;
+    top: 177px;
+    right: 142px;
+  }
+  .productionDeptBlock02 {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 450px;
+    width: 428px;
+    background: url(../../assets/plantation/bg_production-block02.png) no-repeat
+      center;
+    background-size: contain;
+    position: absolute;
+    left: 153px;
+    bottom: -36px;
+  }
+  .productionDeptBlock02 dl {
+    width: 285px;
+  }
+}
+
+/*-----------------------productionCalendarHeading-----------------------------*/
+
+.productionCalendarHeading {
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+.productionCalendarHeading span:after {
+  content: "";
+  margin: auto;
+  height: 6px;
+  width: 250px;
+  background: url(../../assets/plantation/txt_production-calendar.svg) no-repeat
+    center;
+  background-size: 250px 6px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  right: 0;
+}
+.productionCalendarHeading span {
+  position: relative;
+}
+.productionCalendarHeading span:before {
+  content: "";
+  height: 64px;
+  width: 49px;
+  background: url(../../assets/plantation/img_calendar-girl.png) no-repeat
+    center;
+  background-size: contain;
+  z-index: 1;
+  position: absolute;
+  bottom: -70px;
+  left: -51px;
+}
+.productionCalendarHeading {
+  margin-top: 38px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.24em;
+}
+.productionCalendar {
+  margin: 54px 15px 0;
+  padding: 25px 15px;
+  background: url(../../assets/common/bg.jpg) repeat left top;
+  background-size: auto;
+}
+.productionCalendar .months div {
+  display: flex;
+}
+.productionCalendar .months div .month {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 65px;
+  background-color: #139d3a;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+.months div .block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: inline-block;
+  background-color: #e9e4db;
+}
+.productionCalendar .months div:nth-of-type(odd) .block {
+  opacity: 0.7;
+}
+.productionCalendar .months {
+  width: 100%;
+  text-align: center;
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .productionCalendarHeading {
+    margin-top: 100px;
+    font-size: 28px;
+  }
+  .productionCalendarHeading span:after {
+    bottom: -35px;
+  }
+  .productionCalendar {
+    margin: 96px auto 0;
+    padding: 50px;
+    width: 1100px;
+  }
+  .productionCalendar .months {
+    display: flex;
+    height: 374px;
+  }
+  .productionCalendar .months > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 76px;
+  }
+  .productionCalendar .months > div .month {
+    width: 100%;
+  }
+  .productionCalendar .months > div + div {
+    margin-left: 8px;
+  }
+  .productionCalendar .inner {
+    position: relative;
+  }
+  .productionCalendarHeading span:before {
+    height: 89px;
+    width: 66px;
+    bottom: -114px;
+    left: -109px;
+  }
+}
+
+/*------------------------------------------*/
+.productionCalendar .item01,
+.productionCalendar .item02,
+.productionCalendar .item03 {
+  background-color: #ff830a;
+}
+.productionCalendar .item04,
+.productionCalendar .item05 {
+  background-color: #ffb400;
+}
+.productionCalendar .item06,
+.productionCalendar .item07 {
+  background-color: #1bae2f;
+}
+.productionCalendar .item08,
+.productionCalendar .item09,
+.productionCalendar .item10 {
+  background-color: #505050;
+}
+.productionCalendar .item11 {
+  background-color: #f76b4f;
+}
+.productionCalendar .item12 {
+  background-color: #27c2ef;
+}
+.productionCalendar .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 32px;
+  width: 8.53333vw;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .productionCalendar .item01 {
+    width: 244px;
+    left: 0;
+  }
+  .productionCalendar .item02 {
+    width: 163px;
+    left: 375px;
+  }
+  .productionCalendar .item03 {
+    width: 118px;
+    left: 546px;
+  }
+  .productionCalendar .item04 {
+    left: 252px;
+  }
+  .productionCalendar .item05 {
+    left: 420px;
+  }
+  .productionCalendar .item06 {
+    width: 206px;
+    top: 262px;
+    left: 336px;
+  }
+  .productionCalendar .item07 {
+    width: 580px;
+    top: 180px;
+    left: 420px;
+  }
+  .productionCalendar .item08 {
+    width: 76px;
+    top: 221px;
+    left: 252px;
+  }
+  .productionCalendar .item09 {
+    width: 244px;
+    top: 221px;
+    left: 672px;
+  }
+  .productionCalendar .item10 {
+    width: 160px;
+    top: 303px;
+    left: 420px;
+  }
+  .productionCalendar .item11 {
+    width: 244px;
+    top: 262px;
+    left: 756px;
+  }
+  .productionCalendar .item12 {
+    width: 244px;
+    top: 303px;
+    left: 756px;
+  }
+  .productionCalendar .item01,
+  .productionCalendar .item02,
+  .productionCalendar .item03 {
+    top: 98px;
+  }
+  .productionCalendar .item {
+    height: 30px;
+  }
+  .productionCalendar .item04,
+  .productionCalendar .item05 {
+    width: 160px;
+    top: 139px;
+  }
+}
+
+/*---------------outlineModule industryInterview----------------*/
+
+@media screen and (min-width: 768px) {
+  .industryInterview {
+    margin: 90px auto 0;
+    /* width: 1010px; */
+  }
+}

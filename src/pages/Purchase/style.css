@@ -1,0 +1,144 @@
+.jumbotronPurchaseTop {
+  background-image: url(../../assets/purchase/mainimg_purchase_pc.jpg) !important;
+}
+.jumbotronPurchaseTop > .inner {
+  height: 156px !important;
+  overflow: unset !important;
+}
+.purchaseTopIntro {
+  margin-top: 248px;
+  text-align: center;
+}
+.purchaseTopIntro {
+  margin: 92px 15px 0;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+
+/*------------------------------*/
+.purchaseModule01 {
+  margin-top: 15%;
+}
+.purchaseModule01 .heading2 {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 18px;
+  width: 209px;
+  font-family: "A-OTF 見出ゴMB1 Std DeBold", "MiGoMB1Std-DeBold", "見出ゴMB1",
+    "Midashi Go MB1", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  position: relative;
+}
+
+.ourAdvanteges .heading2:after {
+  background: url(../../assets/common/img_dots02.png) no-repeat left top;
+  background-size: auto 100%;
+}
+
+.purchaseModule01 .heading2:after {
+  content: "";
+  height: 10px;
+  width: 100%;
+  /* background: url(../img/common/img_dots.png) no-repeat center; */
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.purchaseModule01 .purchaseModule01List {
+  display: flex;
+  width: 980px;
+  margin: 50px auto 0;
+}
+
+.purchaseModule01 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 44px;
+}
+.purchaseModule01 .title .number {
+  margin-right: 10px;
+  height: 33px;
+  width: 36px;
+  background: no-repeat center;
+  background-size: contain;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 33px;
+  text-align: center;
+}
+.purchaseModule01 .title .purchase-text {
+  font-family: "A-OTF 見出ゴMB1 Std DeBold", "MiGoMB1Std-DeBold", "見出ゴMB1",
+    "Midashi Go MB1", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+.purchaseModule01 .purchaseModule01List li:nth-of-type(odd) .title .number {
+  background-image: url(../../assets/purchase/bg_number-odd.jpg);
+}
+.purchaseModule01 .purchaseModule01List li:nth-of-type(even) .title .number {
+  background-image: url(../../assets/purchase/bg_number-even.jpg);
+}
+.purchaseModule01 figure {
+  margin-top: 15px;
+}
+.blockModule01 p,
+.blockModule02 p {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    sans-serif;
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+.purchaseModule01 .description {
+  margin-top: 15px;
+}
+.advantageText span ~ span {
+  margin-top: 10px;
+}
+.ourAdvanteges .advantageText span {
+  display: inline-block;
+  background: repeat center;
+  background-size: auto;
+  font-family: "A-OTF 見出ゴMB1 Std DeBold", "MiGoMB1Std-DeBold", "見出ゴMB1",
+    "Midashi Go MB1", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+}
+.ourAdvanteges .advantageText span:nth-of-type(odd) {
+  background-image: url(../../assets/common/bg02.jpg);
+}
+.ourAdvanteges .advantageText span:nth-of-type(even) {
+  background-image: url(../../assets/common/bg03.jpg);
+}
+@media screen and (min-width: 768px) {
+  .purchaseModule01 li {
+    width: 300px;
+  }
+  .purchaseModule01 li + li {
+    margin-left: 40px;
+  }
+  .purchaseModule01 .purchaseModule01List {
+    display: flex;
+    width: 980px;
+    margin: 50px auto 0;
+  }
+  .ourAdvanteges .advantageText {
+    margin: 50px auto 0;
+    width: 658px;
+  }
+}

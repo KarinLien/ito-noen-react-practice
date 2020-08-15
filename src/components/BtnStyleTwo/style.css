@@ -1,0 +1,54 @@
+.btnStyle02 {
+  position: relative;
+  transition: background-color 0.5s ease;
+}
+.btnStyle01 .btn,
+.btnStyle02 .btn,
+.btnStyle03 .btn,
+.btnStyle04 .btn {
+  z-index: 3;
+}
+.btnStyle02:before {
+  background: url(../../assets/common/bg_button01.png) no-repeat center;
+  background-size: cover;
+}
+.btnStyle01:before,
+.btnStyle02:before,
+.btnStyle03:before,
+.btnStyle04:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.btnStyle02:hover::after {
+  background-color: #959595;
+}
+.btnStyle02:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background-color: #e7e2d8;
+  opacity: 0.3;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.nextBtn span {
+  background-image: url(../../assets/common/ico_arrow.png) !important;
+  background-size: 7px 17px !important;
+  background-repeat: no-repeat !important;
+  background-position: right 15px center !important;
+}
+@media screen and (min-width: 768px) {
+  .btnStyle02 {
+    margin: 52px auto 0;
+    width: 321px;
+  }
+}

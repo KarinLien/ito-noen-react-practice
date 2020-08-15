@@ -1,0 +1,168 @@
+.aboutTopSection.section1 .picture2:before,
+.aboutTopSection.section1 .picture4:before,
+.aboutTopSection.section1 .picture6:before,
+.aboutTopSection.section1 .picture7:before {
+  content: "";
+  background: url(../../assets/about/bg.jpg) repeat left top;
+  background-size: auto;
+  z-index: -1;
+  position: absolute;
+}
+
+/*--------------------------------*/
+.aboutTopJumbotron {
+  height: 200px;
+  height: 53.33333vw;
+  background: url(../../assets/about/bg_jumbotron.png) no-repeat center bottom -1px,
+    url(../../assets/about/mainimg_about.jpg) no-repeat center;
+  background-size: 100% auto, cover;
+  position: relative;
+}
+
+.aboutTopJumbotron .content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 175px;
+  top: 40.66667vw;
+  left: 0;
+}
+.aboutTopSection {
+  margin: 0 15px;
+  position: relative;
+}
+.aboutTopSection .pictures {
+  position: relative;
+}
+.aboutTopSection picture {
+  position: absolute;
+  display: block;
+}
+.aboutTopSection.section1 .picture2:before {
+  height: 156px;
+  height: 41.6vw;
+  width: 202px;
+  width: 53.86667vw;
+  top: 39px;
+  top: 10.4vw;
+  left: 32px;
+  left: 8.53333vw;
+}
+.aboutTopSection.section1 .picture3:after,
+.aboutTopSection.section1 .picture4:after {
+  content: "";
+  height: 173px;
+  width: 135px;
+  background: url(../../assets/about/img_deco01_pc.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+}
+@media screen and (min-width: 1366px) {
+  .aboutTopJumbotron {
+    height: 33.67vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutTopJumbotron {
+    height: 460px;
+    background-image: url(../../assets/about/bg_jumbotron_pc.png),
+      url(../../assets/about/mainimg_about_pc.jpg);
+  }
+  .aboutTopJumbotron .content .title {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 24px;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+  .aboutTopJumbotron .content img {
+    display: block;
+    margin: 40px auto 0;
+    width: 109px;
+  }
+
+  /*------------------------------*/
+  .aboutTopSection.section1 {
+    margin-top: 30%;
+  }
+  .aboutTopSection {
+    margin: 0 auto;
+    width: 1100px;
+  }
+  .aboutTopSection.section1 .pictures1 {
+    height: 402px;
+  }
+  /*------------------------------*/
+  .aboutTopSection.section1 .picture2:before {
+    height: 240px;
+    width: 310px;
+    top: 60px;
+    left: 50px;
+  }
+  .aboutTopSection.section1 .picture1 {
+    width: 200px;
+    bottom: 0;
+    right: 0;
+  }
+  .aboutTopSection.section1 .picture2 {
+    width: 300px;
+    top: 0;
+    left: 0;
+  }
+  .aboutTopSection.section1 .picture3 {
+    width: 450px;
+    top: 132px;
+    left: 420px;
+  }
+  .aboutTopSection.section1 .picture3:after {
+    top: -150px;
+    right: 19px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutTopSection.section1 .picture3:after {
+    top: -75px;
+    top: -20vw;
+    left: 148px;
+    left: 39.46667vw;
+  }
+  .aboutTopSection.section1 .picture3:after,
+  .aboutTopSection.section1 .picture4:after {
+    content: "";
+    height: 87px;
+    height: 23.2vw;
+    width: 68px;
+    width: 18.13333vw;
+    background: url(../../assets/about/img_deco01.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+  }
+  .aboutTopSection.section1 .pictures1 {
+    height: 306px;
+    height: 81.6vw;
+  }
+  .aboutTopSection.section1 .picture1 {
+    width: 100px;
+    width: 26.66667vw;
+    top: 0;
+    right: 20px;
+  }
+  .aboutTopSection.section1 .picture2 {
+    width: 195px;
+    width: 52vw;
+    top: 30px;
+    left: 0;
+  }
+  .aboutTopSection.section1 .picture3 {
+    width: 225px;
+    width: 60vw;
+    right: 0;
+    bottom: 0;
+  }
+  .aboutTopSection.section1 {
+
+    margin-top: 16.8vw;
+  }
+}

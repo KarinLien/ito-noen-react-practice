@@ -1,0 +1,19 @@
+.jumbotronRecruit {
+  background-image: url(../../assets/recruit/mainimg_recruit_pc.jpg);
+}
+
+.jumbotronRecruit .inner img {
+  margin: 30px auto 0;
+}
+
+.recruitIntroText {
+  display: block;
+  margin-top: 200px;
+  font-size: 28px;
+  line-height: 1.93;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.recruitSection {
+  margin-top: 70px;
+}
