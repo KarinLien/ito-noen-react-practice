@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, HashRouter } from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Purchase from "./pages/Purchase";
 import About from "./pages/About";
@@ -15,7 +15,7 @@ import Plantation from "./pages/Plantation";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route
         render={({ location }) => (
           <Switch location={location}>
@@ -33,7 +33,7 @@ function App() {
           </Switch>
         )}
       />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
