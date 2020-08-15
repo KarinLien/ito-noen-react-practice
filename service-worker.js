@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ito-noen-react-practice/precache-manifest.fd37e2c13627a2d02f9d72228687add3.js"
+  "/ito-noen-react-practice/precache-manifest.7c3b871b974d19a56d414a105eb7dcda.js"
 );
 
 self.addEventListener('message', (event) => {
